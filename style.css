@@ -1,10 +1,10 @@
-*, body{
+*{
     border: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header{
-    height: 90px;
+    height: 100px;
     width: 100%;
     margin-bottom: 30px;
 
@@ -12,6 +12,9 @@ header{
 .header{
     border-bottom: 2px gray solid;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header figure{
     width: 25%;
@@ -22,6 +25,9 @@ figcaption{
 .header figure img{
     width: 25%;
 }
+h2{
+    margin: 0 20px;
+}
 main{
     display: flex;
     justify-content: space-between;
@@ -29,17 +35,40 @@ main{
 main .caixa{
     border: 0.5px solid gray
 }
-.title, .artic{
+.title{
+    text-align: center;
     width: 15%;
+    left: 0;
+    position: fixed;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.artic{
+    text-align: center;
+    right: 0;
+    width: 14%;
+    position: fixed;
+    height: 100px;
+}
+.artic nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+}
 .content{
+    position: absolute;
     width: 70%;
+    margin: 0 15%;
     height: auto;
-    padding: 0 5px;
 }
 .content h1{
     text-align: center;
